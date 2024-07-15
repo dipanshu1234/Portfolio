@@ -1,0 +1,850 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    height:100vh;
+    width:100vw;
+    
+    overflow-x: hidden;
+}
+.firstpage{
+    height:100%;
+    width:90%;
+    margin-left: 5%;
+    
+    
+}
+.nav{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    flex-wrap: wrap;
+    
+}
+.nav-name{
+
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    margin: -.55em;
+    height: fit-content;
+    align-items: center;
+    
+}
+
+
+.nav-name #navname{
+    margin-left: -3.75rem;
+    font-family: 'Baskervville SC';
+    font-weight: bold;
+    
+}
+
+.nav-name h1{
+    margin: -3.125rem;
+}
+.nav-name img{
+    width:19.375rem;
+}
+.nav-links{
+    display: flex;
+    gap:3.75rem;
+    margin-top:4%;
+    font-size: 3.125rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    transition: all 1s;
+    
+    height: fit-content;
+    margin-right: 0px;
+    
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links a:hover{
+    transition: all 0.8s;
+    font-weight: bold;
+}
+.hero{
+    height:100%;
+    width:100%;
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+}
+.hero-writting{
+    height:62%;
+    width:54%;
+    
+    display: flex;
+    flex-direction: column;
+    top:18%;
+    gap:3.75rem;
+    position: relative;
+    
+}
+.hero-name{
+    font-size: 4.375rem;
+    font-family: 'Raleway';
+    font-weight: 400;
+    position: relative;
+    
+    margin-left: 5%;
+    color: rgb(2, 2, 83);
+}
+.hero-about{
+    font-size: 5.625rem;
+    font-family: 'Raleway';
+    font-weight: 430;
+    position: relative;
+    
+    margin-left: 5%;
+    color: rgb(2, 2, 83);
+    letter-spacing: 0.25rem;
+}
+.hero-skills{
+    font-size: 6.25rem;
+    color: rgb(84, 84, 251);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+.hero-para{
+    font-size:2.5rem;
+    margin-left: 5%;
+    font-family: 'Raleway';
+}
+.hero-button{
+    font-size:3.125rem;
+    background-color: #e84849;
+    border:3px solid #e84849;
+    color:white;
+    width:15.625rem;
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+    transition: all   1s;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0.375rem 0.375rem 0.375rem  rgb(189, 188, 188);
+}
+.hero-button::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: white;
+    transition: all   .8s;
+    transform: scaleX(0);
+    
+    transform-origin: left;
+    z-index: -1;
+}
+.hero-button:hover::before{
+    transform: scaleX(1);
+    
+}
+.hero-button:hover{
+    color: black;
+}
+
+
+.dipanshu-photo{
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70%;
+    width: 65%;
+    left: 3.125rem;;
+    z-index: -2;
+    
+    bottom:-1rem;
+    animation: dphoto 3s linear infinite alternate ;
+    
+}
+@keyframes dphoto {
+
+    0%{
+        transform: scale(1);
+        filter: grayscale(0);
+        box-shadow: .1875rem .1875rem 1.5625rem black;
+    }
+    50%{
+        transform: scale(1.05);
+        filter: grayscale(0.3);
+        box-shadow:.625rem .625rem .9375rem black;
+    }
+    100%{
+        transform: scale(1.1);
+        filter: grayscale(.8);
+        
+    }
+    
+}
+.sbkabaap{
+    position: absolute;
+    height:60%;
+    width:70%;
+    
+    bottom:30%;
+    Right:10%;
+    display: flex;
+}
+.circle{
+    
+    bottom:-100px;
+    animation: circle 3s linear infinite alternate;
+}
+.circle img{
+    height:3.125rem;
+}
+
+@keyframes circle {
+    from{
+        bottom:-15.375rem;
+        left:-1.125rem;
+    }
+    to{
+        
+        bottom:-10rem;
+        left:.5rem;
+    }
+}
+.cube{
+    right:2.5rem;
+    top:-0.6rem;
+    animation: cube 3s linear infinite ;
+    
+}
+.cube img{
+    height: 5rem;
+}
+@keyframes cube {
+    0%{
+        transform: translateY(0px) rotateY(0deg);
+        
+        
+    }
+    50%{
+        
+        transform: translateY(1.25) rotatey(180deg   );
+        
+        
+    }
+    100%{
+        transform: translateY(0px)  rotatey(360deg   );
+        
+        
+    }
+
+}
+.zigzag img{
+    height:11.875rem;
+}
+.zigzag{
+    animation: zigzag 2.5s linear infinite alternate;
+}
+@keyframes zigzag {
+    from{
+        transform: translateX(-0.5rem) translateY(0.5rem);
+    }
+    to{
+        transform: translateX(1.875rem) translateY(-1.25rem);
+    }
+}
+.plus img{
+    height:3.75rem;
+    
+}
+.plus{
+    right:24.375rem;
+    animation: plus 2s linear infinite alternate;
+}
+@keyframes plus {
+    from{
+        transform: translateY(0rem);
+    }
+    to{
+        transform: translateY(3rem);
+    }
+}
+.dot img{
+    height:8.75rem;
+}
+.dot{
+    bottom:-17rem;
+    right:-3rem;
+    animation: dot 3s linear infinite alternate;
+}
+@keyframes dot {
+    from{
+
+        transform: translateY(.87rem);
+    }
+    to{
+        transform: translateY(-.625rem);
+    }
+}
+.hero-image{
+    height:80%;
+    width:46%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.absolute{
+    position: absolute;
+}
+.dipanshu-photo{
+    padding:    5%;
+}
+.hero-shaded{
+    position: absolute;
+    bottom: 10rem;   
+    left: -6rem;
+    font-size: 200px;
+    font-family: 'Raleway';
+    color: rgb(231,231,231);
+    font-weight: 600;
+    
+    height: 12rem;
+    opacity: 1;
+    
+    animation: hshade 4s ease forwards;
+}
+@keyframes hshade {
+    from{
+
+        transform: translateX(-111.125rem) ;
+    }
+    to{
+        transform: translateX(0rem) ;
+    }
+}
+@media(max-width:1200px) and (min-width:600px){
+    :root{
+        font-size: 8px;
+    }
+    .dipanshu-photo{
+        height: 40%;
+    }
+}
+@media(max-width:600px){
+    :root{
+        font-size: 7px;
+    }
+    .dipanshu-photo{
+        height: 30%;
+    }
+}
+.projects{
+    
+    margin-top: 4rem;
+        /* height: 100%;
+        width: 100%; */
+    background-color: rgb(231, 231, 231);
+    
+    
+} 
+.project-container{
+    margin-left:17rem;
+    display: flex;
+    height:100%;
+    width:100%;
+    
+    flex-direction: column;
+    
+    position: relative;
+}
+.project-heading{
+    padding-top: 2.2rem;
+    font-size: 12rem;
+    width: 100%;
+    /* align-self: center; */
+    position: absolute;
+    left:4.3em;
+    font-family: 'Raleway';
+    font-weight: 550;
+    color: #e84849;
+}
+.project1{
+    margin-bottom: 28rem;
+    margin-left: 0rem;
+    position: relative;
+    top:290px;
+    
+    height:70rem;
+    width: 73%;
+    background-image: url(Project1.png);
+    background-size: cover;
+    
+}
+.project-card{
+    
+    margin-top: 2%;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    box-shadow: 2px 2px 50px black;
+
+}
+.project-card::before{
+    content:"";
+    position: absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: #1f1f1f9a;
+    z-index: -10;
+    
+}
+.project-card::after{
+    content: "";
+    position: absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-image: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transition: transform .3s;
+    transform-origin: left;
+    z-index:-2;
+}
+.project-card:hover::after{
+    transform:scalex(1);
+}
+.project-card-image{
+    
+    height:25%;
+    
+    width:45%;
+    
+}
+.pi{
+    height: 45%;
+    margin-right: 1rem ;
+    margin-bottom: 1rem;
+}
+.project-content{
+    position: relative;
+    height:100%;
+    padding-top: 15rem;
+    padding-left: 15rem;;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    transition: transform .3s;
+}
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+.project-card-heading{
+    font-size:6rem;
+    font-family: 'Raleway';
+    font-weight: 650;
+    color: white;
+}
+.project-card-para{
+    font-size:3rem;
+    width: 60rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 1rem;
+    color: white;
+}
+.project-card-button{
+    
+    width:30%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap:20px;
+}
+.rm{
+    width:50%;
+    box-shadow: none;
+    position: relative;
+    right: 26px;
+}
+.g{
+    font-size: 4.2rem;
+    color: white;
+    display: flex;
+    
+    height: 100%;
+    width:31%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.fa-github {
+    transition: all .8s;
+}
+.fa-github:hover{
+    color: #e84849;
+}
+.fa-link{
+    transition: all .8s;
+}
+.fa-link:hover{
+    color: #e84849;
+}
+.project-number{
+    position: absolute;
+    right:-120px;
+    top:-120px;
+    font-size: 27rem;
+    color: white;
+    transform: scale(0);
+    font-weight: 500;
+}
+.project-card:hover .project-number{
+    transform: scale(1);
+    
+}
+.project2{
+    position: relative;
+    margin-left: 15rem;
+    
+    height:70rem;
+    width: 73%;
+    background-image: url(Project2.png);
+    background-size: cover;
+    margin-bottom: 12rem;
+    
+    
+    
+}
+.pc2{
+    margin-left: 45rem;
+    
+    margin-right: 0px;
+}
+.pci2{
+    
+    width:60%;
+    height: 15%;
+   
+}
+.pcb{
+    
+    width:50%;
+    display: flex;
+    gap: 30px;
+    
+}
+.rm2{
+    width: 49%;
+    position: relative;
+    right:26px;
+    box-shadow: none;
+}
+.pi2{
+    height: 70%;
+}
+.project3{
+    
+    height:70rem;
+    width:70%;
+    background-image: url(Project3.png);
+    margin-bottom: 6rem;
+}
+.pci3{
+    
+    height:15%;
+}
+.pi3{
+    height:85%;
+}
+.rm3{
+    width:32%;
+}
+.pn2{
+    left:-120px;
+    top:-120px;
+}
+.skills{
+    height:100%;
+    width:100%;
+    margin-top:21rem;
+    margin-left: 15rem;
+    
+    display: flex;
+    gap:15rem;
+    position: relative;
+}
+
+.skills-right-part{
+    
+    margin-right: 10px;
+    width:40%;
+    height:70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+    gap:-5px;
+    position: relative;
+    
+    
+}
+.si img{
+    position: absolute;
+    width:12rem;
+    height:11rem;
+    transition: all .6s;
+    
+}
+.si img:hover{
+    transform: scale(1.2);
+}
+.blob{
+    position: absolute;
+    z-index: -10;
+    right:700px;
+    top:200px;
+    animation: blob 3s linear infinite alternate;
+    
+}
+@keyframes blob {
+    from{
+        transform: translateX(50px) translateY(70px);
+    }
+    to{
+        transform: translateX(-70px) translateY(-50px);
+    }
+}
+.blob img{
+    height:40rem;
+}
+.skills-left-part{
+    height:70%;
+    width: 35%;
+    
+    display:flex;
+    flex-direction: column;
+    gap:5rem;
+}
+.wpara{
+    font-size: 7rem;
+    font-family: 'Raleway';
+    font-weight: 600;
+    color: #e84849;
+}
+.spara{
+    font-size: 11rem;
+    font-family: 'Raleway';
+    font-weight: 670;
+    
+    
+}
+.skills-para{
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    font-family: 'Raleway';
+    font-weight: 420;
+}
+.skills-faded{
+    position: absolute;
+    right:260px;
+    bottom:0px;
+    font-size: 400px;
+    color: rgb(231, 231, 231);
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+.contact{
+    background-color: rgb(231, 231, 231);
+}
+.contact-content{
+    margin-top:-6.2rem;
+    padding-top: 4rem;
+    margin-left: 17.5rem;
+    height:100%;
+    width:100%;
+}
+.contact-heading{
+    
+    font-size: 11rem;
+    font-weight: 600;
+    font-family: 'Raleway';
+    color: #e84849;
+}
+.contact-subheading{
+    font-family: 'Raleway';
+    font-size:6rem;
+    font-weight: 540;
+    color: #6771a5;
+    margin-bottom: 6rem;
+}
+.form{
+    margin-left: 15rem;
+    
+}
+#form{
+    height: 95rem;
+    width:70%;
+    
+    gap:1rem;
+    
+}
+.f{
+    border-radius: 4%;
+    height:10%;
+    width:100%;
+    
+    
+    
+}
+.a1{
+    height:62%;
+    width:100%;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    padding-left: 4rem;
+    font-family: 'Raleway';
+
+}
+
+.f2{
+    height: 50%;
+    
+}
+.a2{
+    font-family: 'Raleway';
+    border-radius: 15px;
+    font-size: 2.5rem;
+    height:90%;
+    width: 100%;
+    padding-bottom: 550px;
+    padding-left: 4rem;
+}
+table{
+    row-gap: 100px;
+}
+.b{
+    border: none;
+    box-shadow: 5px 5px 10px rgb(121, 121, 121);
+}
+.h{
+    position: relative;
+    height:100px;
+    width:480px;
+    
+    bottom:50px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e84849;
+    color: white;
+    z-index: 1;
+    transition: 0.8s all;
+    border:5px solid #e84849;
+    box-shadow: 5px 5px 10px rgb(121, 121, 121);
+}
+.h::before{
+    content: "";
+    position: absolute;
+    left:0px;
+    right:0px;
+    bottom:0pc;
+    top:0px;
+    background-color: white;
+    
+    transform: scalex(0);
+    z-index: -1;
+    transition: all .8s;
+    transform-origin: left ;
+}
+.h:hover::before{
+    transform: scaleX(1);
+    
+}
+.h:hover{
+    color: black;
+}
+.footer{
+    height:30%;
+    width:100%;
+    background-color: #343d68;
+    color:white;
+    display: flex;
+    align-items: center;
+    
+}
+.left-sec{
+    height:100%;
+    width:46%;
+    display: flex;
+    align-items: center;
+    
+    margin-left: 15rem;
+}
+.linkss{
+    height:30%;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+    
+    
+}
+.q{
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+.q:hover{
+    color: #e84849;
+    
+}
+.right-sec{
+    height:100%;
+    width:36%;
+    display: flex;
+    align-items: center;
+    
+    margin-left: 15rem;
+}
+.icons{
+    height:30%;
+    font-size: 70px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width:60%;
+    
+    
+}
+.p{
+    transition: all .8s;
+}
+.p:hover{
+    color: #e84849;
+}
+.icons a{
+    color: white;
+}
